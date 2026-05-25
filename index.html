@@ -70,7 +70,7 @@
     <div style="text-align:center; font-weight:bold; color:#ffcc00; margin-bottom:5px;">🛠️ TRACKING DIAGNOSTICS</div>
     <div>DEVICE MODE   : <span id="devType" style="color:#fff;">-</span></div>
     <div>ACTIVE CAMERA : <span id="devCam" style="color:#fff;">-</span></div>
-    <div>TARGET CLASS  : <span style="color:#fff;">car, motorcycle, truck, bus</span></div>
+    <div>TARGET CLASS  : <span style="color:#fff;">car, motorcycle, truck, bus, cup</span></div>
     <div>COUNTED IDs   : <span id="countedIdsList" style="color:#fff;">[]</span></div>
   </div>
 
@@ -96,7 +96,7 @@
     let countedIDs = new Set();
      
     const COUNTING_LINE_Y = 240; 
-    const allowedClasses = ['car', 'motorcycle', 'truck', 'bus'];
+    const allowedClasses = ['car', 'motorcycle', 'truck', 'bus', 'cup'];
 
     function checkDevice() {
       const ua = navigator.userAgent;
